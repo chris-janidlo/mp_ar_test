@@ -1,6 +1,9 @@
 # credit to https://gist.github.com/anjdreas/7d203cc2b2077df5acd67b8c101c4efa for backbone
 
 
+# don't commit google api key
+ProjectSettings/ARCoreProjectSettings.json
+
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
