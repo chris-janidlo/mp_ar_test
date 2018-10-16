@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GoogleARCore/Examples/HelloAR/Scenes/HelloAR.unity
-    guid: e6a6fa04348cb45c9b0221eb19c946da
+    path: Assets/Scenes/Menu.unity
+    guid: 1913da22bfcbc40d9974e1dbc7150fb4
+  - enabled: 1
+    path: Assets/Scenes/Resolve Cloud Anchor.unity
+    guid: e5643b5d078f64f7d96569aab9be5844
+  - enabled: 1
+    path: Assets/Scenes/Scan Cloud Anchor.unity
+    guid: 5089fb974567847c3950a128f9d64a8c
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 61b9b21a242b14ef49912e399f97f943
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}
