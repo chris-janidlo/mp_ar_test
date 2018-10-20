@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 88682052}
   - component: {fileID: 88682051}
   - component: {fileID: 88682050}
+  - component: {fileID: 88682053}
   m_Layer: 5
   m_Name: Join
   m_TagString: Untagged
@@ -187,18 +188,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 88682051}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2028053538}
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Resolve Cloud Anchor
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &88682051
@@ -241,6 +231,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 88682048}
   m_CullTransparentMesh: 0
+--- !u!114 &88682053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88682048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb02a6561b06d4ff9b6b216c1c8eba94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: Resolve Cloud Anchor
 --- !u!1 &166201158
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,6 +633,7 @@ GameObject:
   - component: {fileID: 1087873906}
   - component: {fileID: 1087873905}
   - component: {fileID: 1087873904}
+  - component: {fileID: 1087873907}
   m_Layer: 5
   m_Name: Create
   m_TagString: Untagged
@@ -694,18 +697,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1087873905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2028053538}
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Scan Cloud Anchor
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1087873905
@@ -748,6 +740,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1087873902}
   m_CullTransparentMesh: 0
+--- !u!114 &1087873907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1087873902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb02a6561b06d4ff9b6b216c1c8eba94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: Scan Cloud Anchor
 --- !u!1 &1430795590
 GameObject:
   m_ObjectHideFlags: 0
@@ -834,6 +838,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainMenuScene: Menu
+  SessionPrefab: {fileID: 114451889682527732, guid: c10877f7cd5764de18d46d7b777d1faa,
+    type: 2}
+  ARScenes:
+  - Scan Cloud Anchor
+  - Resolve Cloud Anchor
 --- !u!4 &2028053539
 Transform:
   m_ObjectHideFlags: 0
