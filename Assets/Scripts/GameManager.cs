@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 	[Tooltip("Scenes where the manager should create AR session.")]
 	public List<string> ARScenes;
 
+	public bool LoadingScene { get; private set; }
+
 	bool sessionCreated;
 
 	void Start ()
@@ -36,14 +38,21 @@ public class GameManager : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			SceneManager.LoadScene(MainMenuScene);
+			LoadMain();
 		}
+	}
+
+	public void LoadMain ()
+	{
+		SceneManager.LoadScene(MainMenuScene);
 	}
 
 	IEnumerator loadScene (string scene)
 	{
+		LoadingScene = false;
 		AsyncOperation load = SceneManager.LoadSceneAsync(scene);
 		yield return new WaitUntil(() => load.isDone);
+		LoadingScene = true;
 
 		if (!sessionCreated && ARScenes.Contains(scene))
 		{

@@ -57,9 +57,17 @@ public class CloudAnchorController : MonoBehaviour
 			else
 			{
 				guiText = "success: " + result.Anchor.CloudId;
-				
+				GameManager.Instance.LoadScene("Lobby");
+				StartCoroutine(createLobby());
 			}
 		});
+	}
+
+	IEnumerator createLobby ()
+	{
+		yield return new WaitWhile(() => GameManager.Instance.LoadingScene);
+
+		
 	}
 
 	void OnGUI()
